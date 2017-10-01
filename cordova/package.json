@@ -18,8 +18,8 @@
     },
     "cordova": {
         "plugins": {
-            "cordova-plugin-browsersync": {},
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-browsersync": {}
         },
         "platforms": [
             "android",

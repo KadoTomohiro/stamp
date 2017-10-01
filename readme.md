@@ -46,11 +46,23 @@ Change dist dir `dist` to `cordova/www`.
 }
 ```
 
-Change `<base>` href.
+Remove `<base>` element.
+
+TODO: really?
 
 `/webapp/src/index.html`
 ```html
-<base href="www">
+<!--<base href="/">-->
+```
+
+Use hashed URL Mode
+
+`webapp/src/app/app-routing.module.ts`
+```typescript
+@NgModule({
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  exports: [RouterModule]
+})
 ```
 
 ### Setup cordova
@@ -86,4 +98,3 @@ cordova$ cordova plugin
        cordova-plugin-browsersync 0.1.7 "cordova-plugin-browsersync"
        cordova-plugin-whitelist 1.3.2 "Whitelist"
 ```
-
