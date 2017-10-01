@@ -1,1 +1,7 @@
 .idea/
+cordova/www/*
+cordova/node_modules
+cordova/platforms
+cordova/plugins
+webapp/node_modules
+webapp/bin
