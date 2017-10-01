@@ -98,3 +98,43 @@ cordova$ cordova plugin
        cordova-plugin-browsersync 0.1.7 "cordova-plugin-browsersync"
        cordova-plugin-whitelist 1.3.2 "Whitelist"
 ```
+
+## RUN
+
+1. Start Angular build
+
+```bash
+$ cd webapp
+webapp$ ng build --watch
+``` 
+
+2. Open new terminal and move cordova dir.
+
+```bash
+$ cd cordova
+``` 
+
+3. Run cordova app.
+
+for browser
+
+```bash
+cordova$ cordova run browser -- --live-reload
+```
+
+for android
+
+NOTE: Connect Android device and PC by USB cable, and connect same network.
+
+```bash
+cordova$ cordova run android -- --live-reload --online=true
+```
+
+for iOS
+
+not yet
+
+## Use Emulater
+
+not yet
+
